@@ -7,7 +7,6 @@
 //
 
 #import "ClearMenulet.h"
-#import "JSON.h"
 
 @implementation ClearMenulet
 
@@ -32,13 +31,12 @@
 	marketOpen = false;
 	
 	updateTimer = [[NSTimer 
-					scheduledTimerWithTimeInterval:(3.0)
+					scheduledTimerWithTimeInterval:(60.0)
 					target:self
-					selector:@selector(helloWorld:)
+					selector:@selector(doUpdate:)
 					userInfo:nil
 					repeats:YES] retain];
 	
-
 	[updateTimer fire];
 }
 
@@ -50,19 +48,13 @@
 	[super dealloc];
 }
 
--(IBAction)helloWorld:(id)sender{
-	NSString *jsonString = [NSString stringWithContentsOfURL:
-							[NSURL URLWithString:
-							 @"http://localhost:3000/market_status.json"]];
+-(IBAction)doUpdate:(id)sender{
+	// TODO: Do I need to release this string?
+	NSString *marketString = [NSString stringWithContentsOfURL:
+							   [NSURL URLWithString:
+							     @"https://app.cleargrain.com.au/login"]];
 	
-	// Create SBJSON object to parse JSON
-	SBJSON *parser = [[SBJSON alloc] init];
-	
-	NSDictionary *object = [parser objectWithString:jsonString];
-	NSLog(@"Hello");
-	NSLog([object objectForKey:@"market_status"]);
-	
-	marketOpen = [[object objectForKey:@"market_status"] isEqualToString:@"open"];
+	marketOpen = ([marketString rangeOfString:@"Market Open"].location != NSNotFound);
 	if (marketOpen) {
 		[statusItem setImage:marketOpenImage];
 		[statusItem setToolTip:@"CLEAR Grain market is open"];

@@ -21,6 +21,6 @@
 	bool marketOpen;
 }
 
--(IBAction)helloWorld:(id)sender;
+-(IBAction)doUpdate:(id)sender;
 
 @end
