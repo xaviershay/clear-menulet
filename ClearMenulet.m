@@ -33,17 +33,32 @@
 	[statusItem setToolTip:@"My Custom Menu Item"];
 	//Enables highlighting
 	[statusItem setHighlightMode:YES];
+	
+	marketOpen = false;
+	
+	updateTimer = [[NSTimer 
+					scheduledTimerWithTimeInterval:(1.0)
+					target:self
+					selector:@selector(helloWorld:)
+					userInfo:nil
+					repeats:YES] retain];
+	[updateTimer fire];
 }
 
 - (void) dealloc {
 	//Releases the 2 images we loaded into memory
 	[marketOpenImage release];
 	[marketClosedImage release];
+	[updateTimer release];
 	[super dealloc];
 }
 
 -(IBAction)helloWorld:(id)sender{
-	[statusItem setImage:marketClosedImage];
+	if (marketOpen)
+		[statusItem setImage:marketOpenImage];
+	else
+		[statusItem setImage:marketClosedImage];
+	marketOpen = !marketOpen;
 	NSLog(@"Hello there!");
 }
 @end

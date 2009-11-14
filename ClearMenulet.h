@@ -15,6 +15,10 @@
 	NSStatusItem *statusItem;
 	NSImage *marketOpenImage;
 	NSImage *marketClosedImage;
+	
+	NSTimer *updateTimer;
+	
+	bool marketOpen;
 }
 
 -(IBAction)helloWorld:(id)sender;
