@@ -3,11 +3,11 @@
 //  clear-menulet
 //
 //  Created by Xavier Shay on 15/11/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//  Copyright 2009 NZX. All rights reserved.
 //
 
 #import "ClearMenulet.h"
-
+#import "JSON.h"
 
 @implementation ClearMenulet
 
@@ -23,25 +23,22 @@
 	marketOpenImage   = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"clock" ofType:@"png"]];
 	marketClosedImage = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"clock_red" ofType:@"png"]];
 	
-	//Sets the images in our NSStatusItem
-	[statusItem setImage:marketOpenImage];
-	//[statusItem setAlternateImage:statusHighlightImage];
-	
 	//Tells the NSStatusItem what menu to load
 	[statusItem setMenu:statusMenu];
-	//Sets the tooptip for our item
-	[statusItem setToolTip:@"My Custom Menu Item"];
+
 	//Enables highlighting
 	[statusItem setHighlightMode:YES];
 	
 	marketOpen = false;
 	
 	updateTimer = [[NSTimer 
-					scheduledTimerWithTimeInterval:(1.0)
+					scheduledTimerWithTimeInterval:(3.0)
 					target:self
 					selector:@selector(helloWorld:)
 					userInfo:nil
 					repeats:YES] retain];
+	
+
 	[updateTimer fire];
 }
 
@@ -54,11 +51,24 @@
 }
 
 -(IBAction)helloWorld:(id)sender{
-	if (marketOpen)
+	NSString *jsonString = [NSString stringWithContentsOfURL:
+							[NSURL URLWithString:
+							 @"http://localhost:3000/market_status.json"]];
+	
+	// Create SBJSON object to parse JSON
+	SBJSON *parser = [[SBJSON alloc] init];
+	
+	NSDictionary *object = [parser objectWithString:jsonString];
+	NSLog(@"Hello");
+	NSLog([object objectForKey:@"market_status"]);
+	
+	marketOpen = [[object objectForKey:@"market_status"] isEqualToString:@"open"];
+	if (marketOpen) {
 		[statusItem setImage:marketOpenImage];
-	else
+		[statusItem setToolTip:@"CLEAR Grain market is open"];
+	} else {
 		[statusItem setImage:marketClosedImage];
-	marketOpen = !marketOpen;
-	NSLog(@"Hello there!");
+		[statusItem setToolTip:@"CLEAR Grain market is closed"];
+	}
 }
 @end
