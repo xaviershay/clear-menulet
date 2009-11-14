@@ -1,0 +1,163 @@
+// !$*UTF8*$!
+{
+	2529A69D10AF656500532108 /* clear-menulet */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "clear-menulet";
+		sourceDirectories = (
+		);
+	};
+	2529A6A610AF656C00532108 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	2529A6A710AF656C00532108 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	2529A6A810AF65AD00532108 /* ClearMenulet.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {860, 648}}";
+			sepNavSelRange = "{355, 0}";
+			sepNavVisRange = "{0, 400}";
+			sepNavWindowFrame = "{{915, 298}, {839, 839}}";
+		};
+	};
+	2529A6A910AF65AD00532108 /* ClearMenulet.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {780, 756}}";
+			sepNavSelRange = "{1226, 0}";
+			sepNavVisRange = "{0, 1364}";
+		};
+	};
+	2529A6B910AF69AE00532108 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: 'statusItem' undeclared (first use in this function)";
+		fRef = 2529A6A910AF65AD00532108 /* ClearMenulet.m */;
+		rLen = 1;
+		rLoc = 16;
+		rType = 1;
+	};
+	2529A6BB10AF69BA00532108 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2529A6A810AF65AD00532108 /* ClearMenulet.h */;
+		rLen = 0;
+		rLoc = 2147483819;
+		rType = 0;
+	};
+	2529A6BC10AF69BA00532108 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2529A6A810AF65AD00532108 /* ClearMenulet.h */;
+		name = "ClearMenulet.h: 22";
+		rLen = 0;
+		rLoc = 399;
+		rType = 0;
+		vrLen = 399;
+		vrLoc = 0;
+	};
+	2529A6BF10AF69BA00532108 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2529A6A910AF65AD00532108 /* ClearMenulet.m */;
+		name = "ClearMenulet.m: 12";
+		rLen = 0;
+		rLoc = 201;
+		rType = 0;
+		vrLen = 1344;
+		vrLoc = 0;
+	};
+	2529A6CB10AF6A3700532108 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2529A6A810AF65AD00532108 /* ClearMenulet.h */;
+		name = "ClearMenulet.h: 17";
+		rLen = 0;
+		rLoc = 355;
+		rType = 0;
+		vrLen = 400;
+		vrLoc = 0;
+	};
+	2529A6CC10AF6A3700532108 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2529A6A910AF65AD00532108 /* ClearMenulet.m */;
+		name = "ClearMenulet.m: 40";
+		rLen = 0;
+		rLoc = 1226;
+		rType = 0;
+		vrLen = 1364;
+		vrLoc = 0;
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 2529A69D10AF656500532108 /* clear-menulet */;
+		activeTarget = 8D1107260486CEB800E47090 /* clear-menulet */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* clear-menulet */,
+		);
+		codeSenseManager = 2529A6A710AF656C00532108 /* Code sense */;
+		executables = (
+			2529A69D10AF656500532108 /* clear-menulet */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					682,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 279930213;
+			PBXWorkspaceStateSaveDate = 279930213;
+		};
+		perUserProjectItems = {
+			2529A6B910AF69AE00532108 /* PBXTextBookmark */ = 2529A6B910AF69AE00532108 /* PBXTextBookmark */;
+			2529A6BB10AF69BA00532108 /* PBXTextBookmark */ = 2529A6BB10AF69BA00532108 /* PBXTextBookmark */;
+			2529A6BC10AF69BA00532108 /* PBXTextBookmark */ = 2529A6BC10AF69BA00532108 /* PBXTextBookmark */;
+			2529A6BF10AF69BA00532108 /* PBXTextBookmark */ = 2529A6BF10AF69BA00532108 /* PBXTextBookmark */;
+			2529A6CB10AF6A3700532108 /* PBXTextBookmark */ = 2529A6CB10AF6A3700532108 /* PBXTextBookmark */;
+			2529A6CC10AF6A3700532108 /* PBXTextBookmark */ = 2529A6CC10AF6A3700532108 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 2529A6A610AF656C00532108 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107260486CEB800E47090 /* clear-menulet */ = {
+		activeExec = 0;
+		executables = (
+			2529A69D10AF656500532108 /* clear-menulet */,
+		);
+	};
+}
