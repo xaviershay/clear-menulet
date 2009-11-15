@@ -11,10 +11,27 @@
 		2529A6AA10AF65AD00532108 /* ClearMenulet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2529A6A910AF65AD00532108 /* ClearMenulet.m */; };
 		2529A6B210AF67C100532108 /* clock_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 2529A6B010AF67C100532108 /* clock_red.png */; };
 		2529A6B310AF67C100532108 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 2529A6B110AF67C100532108 /* clock.png */; };
+		2529A7D610AF848600532108 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = 2529A7D510AF846F00532108 /* Growl Registration Ticket.growlRegDict */; };
+		2529A7EF10AF857100532108 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2529A7EE10AF857100532108 /* Growl.framework */; };
+		2529A7F910AF859C00532108 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2529A7EE10AF857100532108 /* Growl.framework */; };
+		2529A83A10AF89B800532108 /* clear-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2529A83910AF89B800532108 /* clear-logo.png */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2529A7C010AF83CA00532108 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2529A7F910AF859C00532108 /* Growl.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -25,6 +42,9 @@
 		2529A6A910AF65AD00532108 /* ClearMenulet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearMenulet.m; sourceTree = "<group>"; };
 		2529A6B010AF67C100532108 /* clock_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock_red.png; sourceTree = "<group>"; };
 		2529A6B110AF67C100532108 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		2529A7D510AF846F00532108 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
+		2529A7EE10AF857100532108 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
+		2529A83910AF89B800532108 /* clear-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clear-logo.png"; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -39,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				2529A7EF10AF857100532108 /* Growl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +104,7 @@
 		29B97314FDCFA39411CA2CEA /* clear-menulet */ = {
 			isa = PBXGroup;
 			children = (
+				2529A83910AF89B800532108 /* clear-logo.png */,
 				2529A6B010AF67C100532108 /* clock_red.png */,
 				2529A6B110AF67C100532108 /* clock.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -90,6 +112,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				2529A7D510AF846F00532108 /* Growl Registration Ticket.growlRegDict */,
 			);
 			name = "clear-menulet";
 			sourceTree = "<group>";
@@ -116,6 +139,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2529A7EE10AF857100532108 /* Growl.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
@@ -132,6 +156,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				2529A7C010AF83CA00532108 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -165,10 +190,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2529A7D610AF848600532108 /* Growl Registration Ticket.growlRegDict in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				2529A6B210AF67C100532108 /* clock_red.png in Resources */,
 				2529A6B310AF67C100532108 /* clock.png in Resources */,
+				2529A83A10AF89B800532108 /* clear-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +238,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../Desktop\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -228,6 +260,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../Desktop\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "clear-menulet_Prefix.pch";

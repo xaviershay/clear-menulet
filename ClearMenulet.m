@@ -8,6 +8,7 @@
 
 #import "ClearMenulet.h"
 
+
 @implementation ClearMenulet
 
 - (void) awakeFromNib{
@@ -21,6 +22,7 @@
 	//Allocates and loads the images into the application which will be used for our NSStatusItem
 	marketOpenImage   = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"clock" ofType:@"png"]];
 	marketClosedImage = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"clock_red" ofType:@"png"]];
+	clearLogo         = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"clear-logo" ofType:@"png"]];
 	
 	//Tells the NSStatusItem what menu to load
 	[statusItem setMenu:statusMenu];
@@ -37,30 +39,54 @@
 					userInfo:nil
 					repeats:YES] retain];
 	
+	[self refreshMarketStatus];
 	[updateTimer fire];
 }
 
 - (void) dealloc {
-	//Releases the 2 images we loaded into memory
+	//Releases the images we loaded into memory
 	[marketOpenImage release];
 	[marketClosedImage release];
+	[clearLogo release];
 	[updateTimer release];
 	[super dealloc];
 }
 
 -(IBAction)doUpdate:(id)sender{
-	// TODO: Do I need to release this string?
-	NSString *marketString = [NSString stringWithContentsOfURL:
-							   [NSURL URLWithString:
-							     @"https://app.cleargrain.com.au/login"]];
+	bool lastMarketOpen = marketOpen;
+
+	[self refreshMarketStatus];
+	NSString* updateText;
 	
-	marketOpen = ([marketString rangeOfString:@"Market Open"].location != NSNotFound);
 	if (marketOpen) {
 		[statusItem setImage:marketOpenImage];
-		[statusItem setToolTip:@"CLEAR Grain market is open"];
+		updateText = @"CLEAR Grain market is open";
 	} else {
 		[statusItem setImage:marketClosedImage];
-		[statusItem setToolTip:@"CLEAR Grain market is closed"];
+		updateText = @"CLEAR Grain market is closed";
 	}
+	
+	[statusItem setToolTip:updateText];
+	if (marketOpen != lastMarketOpen)
+		[self notifyGrowl:updateText];
+}
+
+- (void) notifyGrowl:(NSString *)text {
+	[GrowlApplicationBridge setGrowlDelegate:self];
+	[GrowlApplicationBridge notifyWithTitle:@""
+								description:text
+						   notificationName:@"Market Status"
+								   iconData:[clearLogo TIFFRepresentation]
+								   priority:0
+								   isSticky:NO
+							   clickContext:[NSDate date]];
+}
+
+-(void)refreshMarketStatus{
+	NSString *marketString = [NSString stringWithContentsOfURL:
+							  [NSURL URLWithString:
+							   @"https://app.cleargrain.com.au/login"]];
+	
+	marketOpen = ([marketString rangeOfString:@"Market Open"].location != NSNotFound);
 }
 @end

@@ -8,13 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <Cocoa/Cocoa.h>
+#import <Growl/Growl.h>
 
-@interface ClearMenulet : NSObject {
+@interface ClearMenulet : NSObject <GrowlApplicationBridgeDelegate> {
 	IBOutlet NSMenu *statusMenu;
 	
 	NSStatusItem *statusItem;
 	NSImage *marketOpenImage;
 	NSImage *marketClosedImage;
+	NSImage *clearLogo;
 	
 	NSTimer *updateTimer;
 	
@@ -22,5 +24,6 @@
 }
 
 -(IBAction)doUpdate:(id)sender;
-
+-(void)notifyGrowl:(NSString *)text;
+-(void)refreshMarketStatus;
 @end
