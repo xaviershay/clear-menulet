@@ -98,16 +98,6 @@
 		vrLen = 428;
 		vrLoc = 0;
 	};
-	2529A85F10AF8D0C00532108 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 2529A6A910AF65AD00532108 /* ClearMenulet.m */;
-		name = "ClearMenulet.m: 44";
-		rLen = 0;
-		rLoc = 1266;
-		rType = 0;
-		vrLen = 1531;
-		vrLoc = 157;
-	};
 	2529A86010AF8D0C00532108 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 32CA4F630368D1EE00C91783 /* clear-menulet_Prefix.pch */;
@@ -128,29 +118,45 @@
 		vrLen = 157;
 		vrLoc = 0;
 	};
-	254B53A210AFC5AD00670376 /* PBXTextBookmark */ = {
+	25B8C68E10B0AD100050AEBA /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 25CCF1B310B09A3B0083FF3A /* clear-logo.png */;
+	};
+	25B8C69510B0AD100050AEBA /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 2529A6A910AF65AD00532108 /* ClearMenulet.m */;
 		name = "ClearMenulet.m: 70";
 		rLen = 0;
 		rLoc = 1835;
 		rType = 0;
-		vrLen = 1237;
-		vrLoc = 1269;
-	};
-	25CCF1C110B09A820083FF3A /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 25CCF1B310B09A3B0083FF3A /* clear-logo.png */;
+		vrLen = 1239;
+		vrLoc = 1267;
 	};
 	25CCF1C210B09A820083FF3A /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = 25CCF1B310B09A3B0083FF3A /* clear-logo.png */;
 	};
-	25CCF1C310B09A820083FF3A /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 25CCF1B310B09A3B0083FF3A /* clear-logo.png */;
+	25EE08CA10B0AD4F00884EFF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2529A6A910AF65AD00532108 /* ClearMenulet.m */;
+		name = "ClearMenulet.m: 43";
+		rLen = 0;
+		rLoc = 1266;
+		rType = 0;
+		vrLen = 1237;
+		vrLoc = 1269;
 	};
-	25CCF1C410B09A820083FF3A /* PBXTextBookmark */ = {
+	25EE08CF10B0AEF000884EFF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2529A6A910AF65AD00532108 /* ClearMenulet.m */;
+		name = "ClearMenulet.m: 63";
+		rLen = 0;
+		rLoc = 1678;
+		rType = 0;
+		vrLen = 1427;
+		vrLoc = 361;
+	};
+	25EE08D010B0AEF000884EFF /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 2529A6A910AF65AD00532108 /* ClearMenulet.m */;
 		name = "ClearMenulet.m: 70";
@@ -216,22 +222,22 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 280009249;
-			PBXWorkspaceStateSaveDate = 280009249;
+			PBXPerProjectTemplateStateSaveDate = 280014148;
+			PBXWorkspaceStateSaveDate = 280014148;
 		};
 		perUserProjectItems = {
 			2529A6E110AF6BD400532108 /* PBXTextBookmark */ = 2529A6E110AF6BD400532108 /* PBXTextBookmark */;
 			2529A7DA10AF848800532108 /* PBXTextBookmark */ = 2529A7DA10AF848800532108 /* PBXTextBookmark */;
 			2529A7E010AF84A100532108 /* PBXTextBookmark */ = 2529A7E010AF84A100532108 /* PBXTextBookmark */;
 			2529A83C10AF8A0900532108 /* PBXTextBookmark */ = 2529A83C10AF8A0900532108 /* PBXTextBookmark */;
-			2529A85F10AF8D0C00532108 /* PBXTextBookmark */ = 2529A85F10AF8D0C00532108 /* PBXTextBookmark */;
 			2529A86010AF8D0C00532108 /* PBXTextBookmark */ = 2529A86010AF8D0C00532108 /* PBXTextBookmark */;
 			2529A86210AF8D0C00532108 /* PBXTextBookmark */ = 2529A86210AF8D0C00532108 /* PBXTextBookmark */;
-			254B53A210AFC5AD00670376 /* PBXTextBookmark */ = 254B53A210AFC5AD00670376 /* PBXTextBookmark */;
-			25CCF1C110B09A820083FF3A /* PBXBookmark */ = 25CCF1C110B09A820083FF3A /* PBXBookmark */;
+			25B8C68E10B0AD100050AEBA /* PBXBookmark */ = 25B8C68E10B0AD100050AEBA /* PBXBookmark */;
+			25B8C69510B0AD100050AEBA /* PBXTextBookmark */ = 25B8C69510B0AD100050AEBA /* PBXTextBookmark */;
 			25CCF1C210B09A820083FF3A /* PBXBookmark */ = 25CCF1C210B09A820083FF3A /* PBXBookmark */;
-			25CCF1C310B09A820083FF3A /* PBXBookmark */ = 25CCF1C310B09A820083FF3A /* PBXBookmark */;
-			25CCF1C410B09A820083FF3A /* PBXTextBookmark */ = 25CCF1C410B09A820083FF3A /* PBXTextBookmark */;
+			25EE08CA10B0AD4F00884EFF /* PBXTextBookmark */ = 25EE08CA10B0AD4F00884EFF /* PBXTextBookmark */;
+			25EE08CF10B0AEF000884EFF /* PBXTextBookmark */ = 25EE08CF10B0AEF000884EFF /* PBXTextBookmark */;
+			25EE08D010B0AEF000884EFF /* PBXTextBookmark */ = 25EE08D010B0AEF000884EFF /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2529A6A610AF656C00532108 /* Source Control */;
 		userBuildSettings = {

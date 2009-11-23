@@ -216,10 +216,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>25CCF1C410B09A820083FF3A</string>
+						<string>25EE08D010B0AEF000884EFF</string>
 						<key>history</key>
 						<array>
-							<string>254B53A210AFC5AD00670376</string>
+							<string>25B8C69510B0AD100050AEBA</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -269,8 +269,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -344,7 +342,7 @@
 							<real>285</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>150 93 1129 922 0 0 1680 1028 </string>
+						<string>124 97 1129 922 0 0 1680 1028 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -355,12 +353,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>clear-logo.png</string>
+								<string>ClearMenulet.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -368,17 +368,17 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>clear-logo.png</string>
+										<string>ClearMenulet.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>25CCF1C310B09A820083FF3A</string>
+										<string>25EE08CF10B0AEF000884EFF</string>
 										<key>history</key>
 										<array>
 											<string>2529A83C10AF8A0900532108</string>
-											<string>2529A85F10AF8D0C00532108</string>
 											<string>2529A86010AF8D0C00532108</string>
-											<string>25CCF1C110B09A820083FF3A</string>
+											<string>25B8C68E10B0AD100050AEBA</string>
+											<string>25EE08CA10B0AD4F00884EFF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -400,7 +400,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {822, 703}}</string>
 								<key>RubberWindowFrame</key>
-								<string>150 93 1129 922 0 0 1680 1028 </string>
+								<string>124 97 1129 922 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -420,7 +420,7 @@
 								<key>Frame</key>
 								<string>{{0, 708}, {822, 173}}</string>
 								<key>RubberWindowFrame</key>
-								<string>150 93 1129 922 0 0 1680 1028 </string>
+								<string>124 97 1129 922 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -444,9 +444,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>25CCF1B010B09A230083FF3A</string>
+				<string>25EE08CC10B0AD4F00884EFF</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>25CCF1B110B09A230083FF3A</string>
+				<string>25EE08CD10B0AD4F00884EFF</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -580,14 +580,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
-		<string>2529A6C010AF69BA00532108</string>
 		<string>254B539410AFC52100670376</string>
 		<string>/Users/xavier/Code/clear-menulet/clear-menulet.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>150 93 1129 922 0 0 1680 1028 </string>
+	<string>124 97 1129 922 0 0 1680 1028 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
